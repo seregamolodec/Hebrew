@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Page title</title>
+    <meta name="viewport" content="initial-scale=1.0">
+    <script src="jquery-3.2.1.min.js"></script>
+</head>
+
+<body>
+    <canvas id="canvas" width="200" height="200" style="background: yellow;"></canvas>
+    <script>
+        function Move() {
+
+
+            var canvas = document.getElementById("canvas");
+            var ctx = canvas.getContext("2d");
+
+            ctx.lineWidth = 4;
+            ctx.beginPath();
+            ctx.arc(100, 100, 70, 0, Math.PI * 2, false);
+            ctx.stroke();
+            // header
+            ctx.beginPath();
+            ctx.moveTo(45, 50);
+            ctx.lineTo(45, 10);
+            ctx.lineTo(155, 10);
+            ctx.lineTo(155, 50);
+            ctx.fill();
+            ctx.beginPath();
+            ctx.moveTo(15, 50);
+            ctx.lineTo(190, 50);
+            ctx.stroke();
+            //glasess
+            ctx.beginPath();
+            ctx.lineWidth = 2;
+            ctx.fillRect(50, 70, 35, 20);
+            ctx.fillRect(110, 70, 35, 20);
+            ctx.fillRect(80, 80, 30, 2);
+            ctx.fill();
+            ctx.beginPath();
+            ctx.moveTo(55, 85);
+            ctx.lineTo(40, 60);
+            ctx.moveTo(130, 85);
+            ctx.lineTo(160, 65);
+            ctx.stroke();
+            //beard
+            ctx.beginPath();
+            ctx.lineWidth = 2;
+            ctx.fillRect(65, 125, 70, 5);
+            ctx.fillRect(65, 125, 5, 35);
+            ctx.fillRect(130, 125, 5, 35);
+            ctx.fillRect(95, 150, 15, 20);
+            ctx.fill();
+            // peisu-left
+            ctx.beginPath();
+            ctx.arc(31, 60, 7, 0, Math.PI * 2, false);
+            ctx.stroke();
+            ctx.beginPath();
+            ctx.arc(26, 70, 7, 0, Math.PI * 2, false);
+            ctx.stroke();
+            ctx.beginPath();
+            ctx.arc(22, 80, 7, 0, Math.PI * 2, false);
+            ctx.stroke();
+            ctx.beginPath();
+            ctx.arc(20, 90, 7, 0, Math.PI * 2, false);
+            ctx.stroke();
+            ctx.beginPath();
+            ctx.arc(20, 100, 7, 0, Math.PI * 2, false);
+            ctx.stroke();
+            ctx.beginPath();
+            ctx.arc(15, 110, 7, 0, Math.PI * 2, false);
+            ctx.stroke();
+            // peisu-right
+            ctx.beginPath();
+            ctx.arc(168, 60, 7, 0, Math.PI * 2, false);
+            ctx.stroke();
+            ctx.beginPath();
+            ctx.arc(173, 70, 7, 0, Math.PI * 2, false);
+            ctx.stroke();
+            ctx.beginPath();
+            ctx.arc(176, 80, 7, 0, Math.PI * 2, false);
+            ctx.stroke();
+            ctx.beginPath();
+            ctx.arc(179, 90, 7, 0, Math.PI * 2, false);
+            ctx.stroke();
+            ctx.beginPath();
+            ctx.arc(179, 100, 7, 0, Math.PI * 2, false);
+            ctx.stroke();
+            ctx.beginPath();
+            ctx.arc(184, 110, 7, 0, Math.PI * 2, false);
+            ctx.stroke();
+            
+        }
+Move();
+    </script>
+</body>
+
+</html>
